@@ -1,32 +1,31 @@
-# Python_API
+# Weather API
 # Weather and Vacation API
 > Here goes your awesome project description!
 
+![Big Map](../Images/equatorsign.png)
+
 ## Table of contents
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
+* [About Weather](#about_weather)
+* [Weather by Hemisphere](#weather_by_hemisphere)
+* [Ideal Weather](#ideal_weather)
+* [Vacation Spots](#vacataion_spots)
+* [Conclusion](#conclusion)
 * [Jupyter Notebooks](#jupyter_notebooks)
 * [Contact](#contact)
 
-## General info
+## About Weather
 Add more general information about project. What the purpose of the project is? Motivation?
+![Cities](../Images/cities_df.PNG)
 
-## Screenshots
+
+## Weather by Hemisphere
 ![Example screenshot](./img/screenshot.png)
 
-## Technologies
+## Ideal Weather
 
-## Setup
+## Vacataion Spots
 
-## Code Examples
-
-## Features
-
-## Status
+## Conclusion
 
 ## Jupyter Notebooks
 
