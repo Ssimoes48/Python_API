@@ -2,7 +2,7 @@
 # Weather and Vacation API
 > Here goes your awesome project description!
 
-![Big Map](../Images/equatorsign.png)
+![Big Map](Images/equatorsign.png)
 
 ## Table of contents
 * [About Weather](#about_weather)
@@ -15,7 +15,7 @@
 
 ## About Weather
 Add more general information about project. What the purpose of the project is? Motivation?
-![Cities](../Images/cities_df.PNG)
+![Cities](Images/cities_df.PNG)
 
 
 ## Weather by Hemisphere
