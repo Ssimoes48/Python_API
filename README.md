@@ -97,6 +97,10 @@ I then used the Google Places API to locate Hotels within a radius of 5000 meter
 
 ## Conclusion
 
+In conclusion, there is a correlation of weather trends as you get closer and farther away from the equator.  The weather is warmer and more humid the closer you are to the equator. There is not a noticeable correlation between wind speed and cloudiness as you move closer and farther from the equator. The results from the Northern and Southern Hemisphere illustrate the same conclusions. 
+
+If you are looking for a warm, dry place in the month of October, Northern Africa is the place to be. 
+
 ## Jupyter Notebooks
 
 ## Sources
