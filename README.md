@@ -85,13 +85,17 @@ With this criterion, I created a new `DataFrame` with the below cities:
 
 ## Vacation Spots
 
-I then used the Google Places API to locate Hotels within a radius of 5000 meters. I then added the marker locations to my google map with this code 
+I then used the Google Places API to locate Hotels within a radius of 5000 meters. 
+
+![hotels](Images/hotels.PNG)
+
+I then added the marker locations to my google map with this code 
 
 ` markers = gmaps.marker_layer(marker_locations)`
 
-![hotels](Images/hotels.PNG)
 ![hotels map](Images/ideal_hotel.PNG)
 
+I also added `name boxes` to the heat map to display the hotel information. 
 
 ![hotel box](Images/hotel_box.PNG)
 
