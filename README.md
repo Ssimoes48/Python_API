@@ -32,7 +32,7 @@ Although humidity can be high at all Latitude locations, at the equator it is co
 
 There appears to be no real correlation to of Cloudiness to latitude accept that at the equator, like humidity, there appears to always be a percent of cloud formation.
 
-![cloudiness](Images/lat_cloudiness.PNG
+![cloudiness](Images/lat_cloudiness.PNG)
 
 There is no correlation between wind speed and latitude. There are some outlying data points in the upper norther hemisphere. 
 
