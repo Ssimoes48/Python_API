@@ -89,7 +89,7 @@ I then used the Google Places API to locate Hotels within a radius of 5000 meter
 
 ![hotels](Images/hotels.PNG)
 
-I then added the marker locations to my google map with this code 
+I added the marker locations to my google map with this code 
 
 ` markers = gmaps.marker_layer(marker_locations)`
 
