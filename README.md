@@ -107,6 +107,10 @@ If you are looking for a warm, dry place in the month of October, Northern Afric
 
 ## Jupyter Notebooks
 
+http://localhost:8889/notebooks/WeatherPy/WeatherPyStarter.ipynb
+
+http://localhost:8889/notebooks/VacationPy/VacationPyStarter.ipynb
+
 ## Sources
  OpenWeatherMap API
  
