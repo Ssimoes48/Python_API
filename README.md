@@ -16,17 +16,17 @@ What is weather like as you approach the equator? In the below analysis I review
 
 
 ## About Weather
-To gather my random world wide city data, I used a `.random.uniform` function to pull a set of 624 cities from varying latitudes and longitudes. Once I compiled this list, I ran a `for loop` to gather data on each city’s maximum temperature, humidity percent level, cloudiness percent, and wind speed. I added this information to a `DataFrame` to analyze. Due to limitations in pulling the data, I added `time.sleep()` after every 50 cities pulled in my code so that I would not exceed my limit of data pulls from the OpenWeatherMap API. 
+To gather my random world wide city data, I used a `.random.uniform` function to pull a set of 575 cities from varying latitudes and longitudes. Once I compiled this list, I ran a `for loop` to gather data on each city’s maximum temperature, humidity percent level, cloudiness percent, and wind speed. I added this information to a `DataFrame` to analyze. Due to limitations in pulling the data, I added `time.sleep()` after every 50 cities pulled in my code so that I would not exceed my limit of data pulls from the OpenWeatherMap API. 
 
 ![Cities](Images/cities_df.PNG)
 
 I then used the `py.plt` function to show my data in scatter plots below. 
 
-Within my data set of 624 random cities all over the world, there is a correlation between the city’s Latitude with the temperature. As the city becomes closer to the equator (latitude of 0) the temperature increases. As the city locations move farther away from the equator, the temperature decreases. My data set has more data for the Northern Hemisphere and the coldest max temperatures can be found at a latitude location of 80. 
+Within my data set of 575 random cities all over the world, there is a correlation between the city’s Latitude with the temperature. As the city becomes closer to the equator (latitude of 0°) the temperature increases. As the city locations move farther away from the equator, the temperature decreases. My data set has more data for the Northern Hemisphere and the coldest max temperatures can be found at a latitude location of 80°. 
 
 ![lat vs temp](Images/lat_temp.PNG)
 
-Although humidity can be high at all Latitude locations, at the equator it is consistently high and there is no data to suggest low humidity near 0 latitude. 
+Although humidity can be high at all Latitude locations, at the equator it is consistently high and there is no data to suggest low humidity near 0° latitude. 
 
 ![humidity](Images/lat_humidity.PNG)
 
@@ -40,17 +40,33 @@ There is no correlation between wind speed and latitude. There are some outlying
 
 ## Weather by Hemisphere
 
+When reviewing the data by hemisphere, the same correlations can be seen as above. On these plots I have illustrated the results further with line regression as well as the equation of the line. To calculate line regression and line equation, I used the following code: 
+
+`(slope, intercept, rvalue, pvalue, stderr) = linregress(x_values, y_values)`
+
+`regress_values = x_values * slope + intercept`
+
+`line_eq = "y = " + str(round(slope,2)) + "x + " + str(round(intercept,2))`
+
+In the Northern Hemisphere and Southern Hemisphere, there is a direct correlation of temperature increase as you get closer to the equator, latitude 0°. These scatter plots show a negative line regression in the Northern Hemisphere and a positive line regression in the Southern Hemisphere. 
+
 ![north temp](Images/north_temp_r.PNG)
 ![south temp](Images/south_temp_r.PNG)
+
+Humidity percentage has a positive line regression in both the Northern and Southern Hemisphere. These plots also illustrate that there is only High Humidity percentage at 0° latitude.
 
 ![north humidity](Images/north_humidity_r.PNG)
 ![south humidity](Images/south_humidity_r.PNG)
 
+Although the line regression value is greater in the Northern Hemisphere, there is no visible correlation between latitude and cloudiness in the Northern Hemisphere and the southern Hemisphere. 
+
 ![north cloudiness](Images/north_cloudiness_r.PNG)
 ![south cloudiness](Images/south_cloudiness_r.PNG)
 
+There is no correlation between wind speed and latitude location. There is a positive line regression in the Northern Hemisphere and a negative line regression in the Southern Hemisphere. 
+
 ![north wind speed](Images/north_wind_r.PNG)
-![south windspeed](Images/south_wind_r.png)
+![south windspeed](Images/south_wind_r.PNG)
 
 ![heat map](Images/heat_map_snip.PNG)
 
