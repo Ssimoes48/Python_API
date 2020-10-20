@@ -71,13 +71,28 @@ There is no correlation between wind speed and latitude location. There is a pos
 ![heat map](Images/heat_map_snip.PNG)
 
 ## Ideal Weather
-![ideal_temp](Images/ideal_temp.PNG)
 
+What is your ideal weather for a vacation spot? Is it warm temperature? Or low humidity? I used the `.loc` function to run through my data set based on 4 criteria I set to find locations containing my ‘ideal weather’. The four criteria were:
+
+*Max Temperature below 85 degrees Fahrenheit 
+*Max Temperature above 75 degrees Fahrenheit 
+*Humidity percentage below 35%
+*Wind Speed below 10mph. 
+
+With this criterion, I created a new `DataFrame` with the below cities:
+
+![ideal_temp](Images/ideal_temp.PNG)
 
 ## Vacation Spots
 
+I then used the Google Places API to locate Hotels within a radius of 5000 meters. I then added the marker locations to my google map with this code 
+
+` markers = gmaps.marker_layer(marker_locations)`
+
 ![hotels](Images/hotels.PNG)
 ![hotels map](Images/ideal_hotel.PNG)
+
+
 ![hotel box](Images/hotel_box.PNG)
 
 ## Conclusion
@@ -86,6 +101,8 @@ There is no correlation between wind speed and latitude location. There is a pos
 
 ## Sources
  OpenWeatherMap API
+ 
+ Google Maps API 
  
  Google Places API
  
