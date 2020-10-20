@@ -58,6 +58,7 @@ To gather my random world wide city data, I used a `.random.uniform` function to
 
 ## Sources
  OpenWeatherMap API
+ 
  Google Places API
  
 ## Contact
