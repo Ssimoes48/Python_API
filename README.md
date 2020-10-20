@@ -20,10 +20,22 @@ To gather my random world wide city data, I used a `.random.uniform` function to
 
 ![Cities](Images/cities_df.PNG)
 
+I then used the `py.plt` function to show my data in scatter plots below. 
+
+Within my data set of 624 random cities all over the world, there is a correlation between the city’s Latitude with the temperature. As the city becomes closer to the equator (latitude of 0) the temperature increases. As the city locations move farther away from the equator, the temperature decreases. My data set has more data for the Northern Hemisphere and the coldest max temperatures can be found at a latitude location of 80. 
 
 ![lat vs temp](Images/lat_temp.PNG)
+
+Although humidity can be high at all Latitude locations, at the equator it is consistently high and there is no data to suggest low humidity near 0 latitude. 
+
 ![humidity](Images/lat_humidity.PNG)
-![cloudiness](Images/lat_cloudiness.PNG)
+
+There appears to be no real correlation to of Cloudiness to latitude accept that at the equator, like humidity, there appears to always be a percent of cloud formation.
+
+![cloudiness](Images/lat_cloudiness.PNG
+
+There is no correlation between wind speed and latitude. There are some outlying data points in the upper norther hemisphere. 
+
 ![wind speed](Images/lat_wind.PNG)
 
 ## Weather by Hemisphere
