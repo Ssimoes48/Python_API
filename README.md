@@ -1,6 +1,6 @@
-# Weather API
 # Weather and Vacation API
-> Here goes your awesome project description!
+What is weather like as you approach the equator? In the below analysis I review weather factors in over 600 cities around the world at varying latitudes and longitudes to see how the temperature, humidity, cloudiness and wind speed are effected as you get closer and farther from the equator.  
+  *Below data is a snapshot of data pulled on 10/17/20. Running notebook may result in different results.*
 
 ![Big Map](Images/equatorsign.png)
 
@@ -11,31 +11,34 @@
 * [Vacation Spots](#vacataion_spots)
 * [Conclusion](#conclusion)
 * [Jupyter Notebooks](#jupyter_notebooks)
+* [Sources](#sources)
 * [Contact](#contact)
 
+
 ## About Weather
+To gather my random world wide city data, I used a `.random.uniform` function to pull a set of 624 cities from varying latitudes and longitudes. Once I compiled this list, I ran a `for loop` to gather data on each city’s maximum temperature, humidity percent level, cloudiness percent, and wind speed. I added this information to a `DataFrame` to analyze. Due to limitations in pulling the data, I added `time.sleep()` after every 50 cities pulled in my code so that I would not exceed my limit of data pulls from the OpenWeatherMap API. 
 
 ![Cities](Images/cities_df.PNG)
 
 
-![lat vs temp](output_data/lat_temp.png)
-![humidity](output_data/humidity.png)
-![cloudiness](output_data/cloudiness.png)
-![wind speed](output_data/wind_speed.png)
+![lat vs temp](Images/lat_temp.PNG)
+![humidity](Images/lat_humidity.PNG)
+![cloudiness](Images/lat_cloudiness.PNG)
+![wind speed](Images/lat_wind.PNG)
 
 ## Weather by Hemisphere
 
-![north temp](output_data/north_temp.png)
-![south temp](output_data/south_temp.png)
+![north temp](Images/north_temp_r.PNG)
+![south temp](Images/south_temp_r.PNG)
 
-![north humidity](output_data/north_humidity.png)
-![south humidity](output_data/south_humidity.png)
+![north humidity](Images/north_humidity_r.PNG)
+![south humidity](Images/south_humidity_r.PNG)
 
-![north cloudiness](output_data/north_cloudiness.png)
-![south cloudiness](output_data/south_cloudiness.png)
+![north cloudiness](Images/north_cloudiness_r.PNG)
+![south cloudiness](Images/south_cloudiness_r.PNG)
 
-![north wind speed](output_data/north_wind.png)
-![south windspeed](output_data/south_wind.png)
+![north wind speed](Images/north_wind_r.PNG)
+![south windspeed](Images/south_wind_r.png)
 
 ![heat map](Images/heat_map_snip.PNG)
 
@@ -43,7 +46,7 @@
 ![ideal_temp](Images/ideal_temp.PNG)
 
 
-## Vacataion Spots
+## Vacation Spots
 
 ![hotels](Images/hotels.PNG)
 ![hotels map](Images/ideal_hotel.PNG)
@@ -51,9 +54,11 @@
 
 ## Conclusion
 
-
 ## Jupyter Notebooks
 
-
+## Sources
+ OpenWeatherMap API
+ Google Places API
+ 
 ## Contact
 Sara Simoes
