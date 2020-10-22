@@ -68,6 +68,10 @@ There is no correlation between wind speed and latitude location. There is a pos
 ![north wind speed](Images/north_wind_r.PNG)
 ![south windspeed](Images/south_wind_r.PNG)
 
+Below is a map generated form the Google Maps API illustrating humidity value over all the cities in my data set. It shows red dot markers for the locations of all 575 of the cities in my data set. I then added a `heat layer` to the map to highlight humidity percentage. To do this I use the code: 
+
+` heat_layer = gmaps.heatmap_layer(locations, weights=humidity,  dissipating=False, max_intensity=10, point_radius=1)`
+
 ![heat map](Images/heat_map_snip.PNG)
 
 ## Ideal Weather
